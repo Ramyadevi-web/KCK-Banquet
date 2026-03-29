@@ -16,7 +16,7 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-brown-50 mb-16 tracking-wider">
-          KCK BANQUETS FOR YOUR SPECIAL OCCASIONS
+          DESIGNED TO SUIT EVERY KIND OF GATHERING
         </h2>
 
         {/* Services Grid */}

@@ -21,10 +21,10 @@ export const Navbar = () => {
   }
 
   const menuItems = [
-    { name: 'About Us', id: 'about' },
+    { name: 'KCK Banquets', id: 'about' },
     { name: 'Award', id: 'awards' },
     { name: 'Gallery', id: 'gallery' },
-    { name: 'ODC', id: 'services' },
+    // { name: 'ODC', id: 'services' },
     { name: 'Events', id: 'services' },
     { name: 'Enquiries', id: 'enquiry' },
   ]

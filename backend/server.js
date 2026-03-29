@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.post('/send-enquiry', async (req, res) => {
-  const { name, phone, event_types } = req.body
+  const { name, phone, number_of_guests, event_location, wedding, event_types } = req.body
 
   try {
    const transporter = nodemailer.createTransport({
@@ -34,8 +34,11 @@ app.post('/send-enquiry', async (req, res) => {
         <h2>New Enquiry</h2>
         <p><b>Name:</b> ${name}</p>
         <p><b>Phone:</b> ${phone}</p>
-        <p><b>Event Types:</b> ${event_types.join(', ')}</p>
-      `,
+        <p><b>Number of Guests:</b> ${number_of_guests}</p>
+        <p><b>Event Location:</b> ${event_location}</p>
+        <p><b>Wedding:</b> ${wedding || 'N/A'} </p> 
+        <p><b>Event Types:</b> ${event_types.length > 0 ?event_types.join(', ') : 'N/A'}</p>
+      `
     }
 
     await transporter.sendMail(mailOptions)

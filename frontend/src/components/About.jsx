@@ -20,32 +20,24 @@ export const About = () => {
           {/* Right: Text */}
           <div className="order-1 md:order-2">
             <h2 className="text-3xl sm:text-4xl font-serif text-brown-50 mb-6">
-              About KCK Banquets
+              KCK Banquets
             </h2>
             <div className="space-y-4 text-brown-50/90 text-base sm:text-lg leading-relaxed">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                eget tincidunt ante. Integer bibendum tempor rutrum. Cras maximus,
-                orci sit amet egestas dapibus, ex lorem faucibus lorem, venenatis
-                fringilla est lectetur ullamcorper ligula.
+                KCK Banquets is an extension of the celebrated culinary legacy of Kappa Chakka Kandhari, designed to host unforgettable gatherings with authenticity and elegance.
               </p>
               <p>
-                Proin dapibus sagittis ultrices. Suspendisse potenti. Sed fermentum
-                lorem turpis, vitae luctus lorem dictum dolor sit. Nam pretendent
-                feugiat at justo venenatis porta. Donec ultrices ullamcorper
-                lobortis.
+                From close-knit celebrations to grand occasions, our banquet spaces combine earthy aesthetics, traditional warmth, and contemporary comfort. Paired with thoughtfully curated, customizable menus — from Kerala-inspired signatures to multi-cuisine selections — every event becomes a wholesome, sensory experience.
               </p>
               <p>
-                Maecenas dignissim ornare nisi in tempor. Pellentesque tempus felis
-                nisl. Vivamus rutrum magna turpis, a commodo risus maximus vitae
-                ultricies in erat. In scelerisque magna nec metus dignissim lacinia.
+                At KCK Banquets, we don’t just host events — we craft moments rooted in culture, flavour, and heartfelt hospitality.
               </p>
             </div>
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <button className="px-8 py-3 border-2 border-gold-500 text-gold-500 font-semibold tracking-wider hover:bg-gold-500 hover:text-brown-950 transition-all duration-300">
                 LEARN MORE
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
