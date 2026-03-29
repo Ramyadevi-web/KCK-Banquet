@@ -9,6 +9,7 @@ export const EnquiryForm = () => {
     event_location: '',
     wedding: '',
     eventTypes: [],
+    open: false
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState({ type: '', text: '' })
@@ -155,24 +156,43 @@ export const EnquiryForm = () => {
             </div>
 
                 {/* Wedding Events Dropdown */}
-            <div>
-              <label className="block text-brown-50 mb-2 text-sm">
-                Wedding Events <span className="text-gold-500">*</span>
-              </label>
 
-              <select
-                value={formData.wedding}
-                onChange={(e) => setFormData({ ...formData, wedding: e.target.value })}
-                className="w-full px-4 py-3 bg-brown-800 border border-gold-500/30 rounded text-brown-50"
-              >
-                <option value="">Select wedding event</option>
-                <option value="Engagement">Engagement</option>
-                <option value="Sangeet">Sangeet</option>
-                <option value="Haldi">Haldi</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Reception">Reception</option>
-              </select>
-            </div>
+                <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, open: !formData.open })}
+                      className="w-full px-4 py-3 bg-brown-800 border border-gold-500/30 rounded text-brown-50 text-left"
+                    >
+                      {formData.wedding || 'Select wedding event'}
+                    </button>
+
+                    {formData.open && (
+                      <div className="absolute w-full mt-2 bg-brown-800 border border-gold-500/30 rounded shadow-lg z-10">
+
+                        {/* Clear option */}
+                          <div
+                            onClick={() =>
+                              setFormData({ ...formData, wedding: '', open: false })
+                            }
+                            className="px-4 py-2 text-brown-300 hover:bg-brown-700 cursor-pointer"
+                          >
+                           None
+                          </div>
+
+                        {['Engagement', 'Sangeet', 'Haldi', 'Wedding', 'Reception'].map((item) => (
+                          <div
+                            key={item}
+                            onClick={() =>
+                              setFormData({ ...formData, wedding: item, open: false })
+                            }
+                            className="px-4 py-2 text-brown-50 hover:bg-brown-950 cursor-pointer"
+                          >
+                            {item}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
 
             {/* Event Types */}
             <div>
