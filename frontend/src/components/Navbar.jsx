@@ -61,6 +61,22 @@ export const Navbar = () => {
             ))}
           </div>
 
+          <div className='flex md:hidden justify-end' style={{'margin-right': '-120px'}}>
+            <img
+              src="/assets/kck_logo.png"
+              alt="KCK Logo"
+              className="h-6 w-auto object-contain"
+            />
+          </div>
+
+             <div className='hidden md:flex justify-end' style={{'margin-right': '-50px'}}>
+            <img
+              src="/assets/kck_logo.png"
+              alt="KCK Logo"
+              className="h-12 sm:h-8 w-auto object-contain"
+            />
+          </div>
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-brown-50 hover:text-gold-500"
