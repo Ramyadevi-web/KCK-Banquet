@@ -1,11 +1,11 @@
 export const Services = () => {
   const services = [
-    { Image: 'src/assets/Bridal Showers.png', label: 'Weddings' },
-    { Image: 'src/assets/Birthdays.png', label: 'Birthdays' },
-    { Image: 'src/assets/Anniversaries.png', label: 'Anniversaries' },
-    { Image: 'src/assets/Parties.png', label: 'Parties' },
-    { Image: 'src/assets/Corporate Parties.png', label: 'Corporate Events' },
-    { Image: 'src/assets/Family Gatherings.png', label: 'Social Gatherings' },
+    { Image: '/assets/Bridal Showers.png', label: 'Weddings' },
+    { Image: '/assets/Birthdays.png', label: 'Birthdays' },
+    { Image: '/assets/Bridal Showers.png', label: 'Anniversaries' },
+    { Image: '/assets/Housewarming Parties.png', label: 'Parties' },
+    { Image: '/assets/Corporate Parties.png', label: 'Corporate Events' },
+    { Image: '/assets/Conferences.png', label: 'Social Gatherings' },
   ]
 
   return (
