@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin } from 'luci
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-brown-800">
+    <section id="contact" className="py-20 bg-brown-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-16">

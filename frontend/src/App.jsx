@@ -9,6 +9,7 @@ import { Testimonials } from './components/Testimonials'
 import { Gallery } from './components/Gallery'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Seamless } from './components/Seamless'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <EnquiryForm />
       <About />
+      <Seamless />
       <Awards />
       <Testimonials />
       <Gallery />

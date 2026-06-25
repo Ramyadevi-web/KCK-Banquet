@@ -31,7 +31,7 @@ export const Testimonials = () => {
   ]
 
   return (
-    <section id="testimonials" className="py-20 bg-brown-800">
+    <section id="testimonials" className="py-20 bg-brown-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl font-serif text-center text-brown-50 mb-16 tracking-wider">

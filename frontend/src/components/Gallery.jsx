@@ -14,7 +14,7 @@ export const Gallery = () => {
   ]
 
   return (
-    <section id="gallery" className="py-20 bg-brown-900">
+    <section id="gallery" className="py-20 bg-brown-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-16">

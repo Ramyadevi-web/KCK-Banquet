@@ -1,14 +1,11 @@
-import React from 'react'
-import { Heart, Cake, Users, Sparkles, Briefcase, Music } from 'lucide-react'
-
 export const Services = () => {
   const services = [
-    { icon: Heart, label: 'Weddings' },
-    { icon: Cake, label: 'Birthdays' },
-    { icon: Heart, label: 'Anniversaries' },
-    { icon: Sparkles, label: 'Parties' },
-    { icon: Briefcase, label: 'Corporate Events' },
-    { icon: Music, label: 'Social Gatherings' },
+    { Image: 'src/assets/Bridal Showers.png', label: 'Weddings' },
+    { Image: 'src/assets/Birthdays.png', label: 'Birthdays' },
+    { Image: 'src/assets/Anniversaries.png', label: 'Anniversaries' },
+    { Image: 'src/assets/Parties.png', label: 'Parties' },
+    { Image: 'src/assets/Corporate Parties.png', label: 'Corporate Events' },
+    { Image: 'src/assets/Family Gatherings.png', label: 'Social Gatherings' },
   ]
 
   return (
@@ -30,7 +27,7 @@ export const Services = () => {
               >
                 {/* Circular Icon */}
                 <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gold-500 flex items-center justify-center mb-4 transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-gold-500/50">
-                  <Icon className="w-12 h-12 sm:w-16 sm:h-16 text-white" strokeWidth={1.5} />
+                  <img src={service.Image} alt={service.label} className="w-16 h-16 sm:w-20 sm:h-20" />
                 </div>
                 {/* Label */}
                 <p className="text-brown-50 text-sm sm:text-base font-light text-center tracking-wide">
