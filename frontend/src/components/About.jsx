@@ -9,7 +9,7 @@ export const About = () => {
           <div className="order-2 md:order-1">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800"
+                src="/assets/Chef.jpeg"
                 alt="Chef"
                 className="rounded-lg shadow-2xl w-full h-[400px] sm:h-[500px] object-cover"
               />

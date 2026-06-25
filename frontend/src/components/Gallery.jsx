@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Gallery = () => {
   const images = [
-    'https://images.unsplash.com/photo-1519167758481-83f29da8c19f?q=80&w=600',
-    'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600',
-    'https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=600',
+    '/assets/gallery1.HEIC',
+    '/assets/gallery2.jpeg',
+    '/assets/hero.HEIC',
     'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600',
     'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=600',
     'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=600',
