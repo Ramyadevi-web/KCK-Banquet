@@ -2,19 +2,20 @@ import React from 'react'
 
 export const Gallery = () => {
   const images = [
-    '/assets/gallery1.HEIC',
-    '/assets/gallery2.jpeg',
-    '/assets/hero.HEIC',
-    'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600',
-    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=600',
-    'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=600',
-    'https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=600',
-    'https://images.unsplash.com/photo-1519167758481-83f29da8c19f?q=80&w=600',
-    'https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=600',
+    "/assets/banquets 1.jpeg",
+    "/assets/banquets 2.jpeg",
+    "/assets/banquets 3.jpeg",
+    "/assets/banquet Post4.jpeg",
+    "/assets/banquets post 5.jpeg",
+    "/assets/banquets post 6.jpeg",
+    "/assets/banquets 7.jpeg"
   ]
+
 
   return (
     <section id="gallery" className="py-20 bg-brown-800">
+
+      {/* Gallery Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-16">
@@ -63,6 +64,9 @@ export const Gallery = () => {
 </div>
 
       </div>
+
+     
+
     </section>
   )
 }

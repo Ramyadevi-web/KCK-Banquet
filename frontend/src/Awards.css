@@ -1,0 +1,166 @@
+.awards-section {
+  width: 100%;
+  background: #3a2618;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.awards-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+
+/* =========================
+   AWARD CARD
+========================= */
+
+.award-card {
+  height: 224px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  background: #3a2618;
+
+  border: 1px solid #e3d4c7;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+
+  padding: 25px 20px;
+}
+
+.award-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   AWARD IMAGE
+========================= */
+
+.award-image-wrapper {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+.award-image {
+  width: 150px;
+  height: 180px;
+
+  object-fit: conver;
+
+  display: block;
+}
+
+
+/* =========================
+   AWARD TITLE
+========================= */
+
+.award-title {
+  margin: 0;
+
+  max-width: 220px;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  text-align: center;
+}
+
+
+/* =========================
+   AWARD SUBTITLE
+========================= */
+
+.award-subtitle {
+  margin: 8px 0 0;
+
+  color: #929292;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .awards-section {
+    padding: 15px;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .award-card {
+    height: 210px;
+    padding: 25px 20px;
+  }
+
+  .award-image-wrapper {
+    height: 80px;
+  }
+
+  .award-image {
+    height: 60px;
+  }
+
+  .award-title {
+    font-size: 16px;
+  }
+
+  .award-subtitle {
+    font-size: 14px;
+  }
+
+}

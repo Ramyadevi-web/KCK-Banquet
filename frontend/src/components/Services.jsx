@@ -5,7 +5,7 @@ export const Services = () => {
     { Image: '/assets/Bridal Showers.png', label: 'Anniversaries' },
     { Image: '/assets/Housewarming Parties.png', label: 'Parties' },
     { Image: '/assets/Corporate Parties.png', label: 'Corporate Events' },
-    { Image: '/assets/Conferences.png', label: 'Social Gatherings' },
+    { Image: '/assets/Conferences.png', label: 'Social Gatherings' }
   ]
 
   return (

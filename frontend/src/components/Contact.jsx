@@ -27,7 +27,7 @@ export const Contact = () => {
                 <Facebook className="w-5 h-5 text-gold-500 group-hover:text-brown-950" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/kckbanquets?igsh=bnludDNlcDNoa3Qx"
                 className="w-12 h-12 bg-brown-900 border border-gold-500/30 rounded-full flex items-center justify-center hover:bg-gold-500 hover:border-gold-500 transition-all duration-300 group"
               >
                 <Instagram className="w-5 h-5 text-gold-500 group-hover:text-brown-950" />
@@ -54,9 +54,10 @@ export const Contact = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold-500 mt-1 flex-shrink-0" />
                 <p className="text-sm sm:text-base">
-                  KCK Banquets, Main Street, Downtown
+                  10, Haddows Road, Opp. Shastri Bhavan,<br />
+                  Thousand Lights West, Nungambakkam, 
                   <br />
-                  City Name, State - 123456
+                  Chennai - 600006
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -65,7 +66,7 @@ export const Contact = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <p className="text-sm sm:text-base">info@kckbanquets.com</p>
+                <p className="text-sm sm:text-base">events@kappachakkakandhari.com</p>
               </div>
             </div>
           </div>

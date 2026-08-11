@@ -1,14 +1,43 @@
 import React from 'react'
 import { Award } from 'lucide-react'
+import '/src/Awards.css'
 
 export const Awards = () => {
-  const awards = [
+  const awardsGallery = [
     { id: 1, img: '/assets/Award1.jpeg' },
     { id: 2, img: '/assets/Award2.jpeg' },
     { id: 3, img: '/assets/Award3.jpeg' },
     { id: 4, img: '/assets/Award4.jpeg' },
     { id: 5, img: '/assets/Award5.jpeg' }
   ]
+
+  
+  const awards = [
+  {
+    image: "/assets/Conde Nast Traveller.png",
+    title: "Nast Traveller"
+  },
+  {
+    image: "/assets/Epicurean Guild Award.png",
+    title: "Epicurean Guild Award"
+  },
+  {
+    image: "/assets/Hospitality Award.png",
+    title: "Hospitality Horizon Top Chefs Award 2024"
+  },
+  {
+    image: "/assets/NDTV Award.png",
+    title: "NDTV Award"
+  },
+  {
+    image: "/assets/Restaurant Award.png",
+    title: "Restaurant Award"
+  },
+  {
+    image: "/assets/Times Food & Nightlife.png",
+    title: "Times Food & Nightlife"
+  }
+];
 
   return (
     <section id="awards" className="py-20 bg-brown-8+00">
@@ -23,7 +52,7 @@ export const Awards = () => {
 
         {/* Awards Grid */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-0 md:gap-0">
-          {awards.map((award, index) => (
+          {awardsGallery.map((award, index) => (
             <div
               key={award.id}
               className="relative group overflow-hidden shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
@@ -52,6 +81,37 @@ export const Awards = () => {
             </div>
           ))}
         </div>
+
+         {/* Award Section */}
+      <div className="awards-grid">
+
+        {awards.map((award, index) => (
+          <div className="award-card" key={index}>
+
+            {/* Award PNG Image */}
+            <div className="award-image-wrapper">
+              <img
+                src={award.image}
+                alt={award.title}
+                className="award-image"
+              />
+            </div>
+
+            {/* Award Title */}
+            <h3 className="award-title">
+              {award.title}
+            </h3>
+
+            {/* Award Subtitle */}
+            {/* <p className="award-subtitle">
+              {award.subtitle}
+            </p> */}
+
+          </div>
+        ))}
+
+      </div>
+
       </div>
     </section>
   )

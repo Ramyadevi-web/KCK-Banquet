@@ -21,9 +21,8 @@ function App() {
       <About />
       <Seamless />
       <Awards />
-      <Testimonials />
       <Gallery />
-      <Contact />
+      <Contact />`  `
       <Footer />
     </div>
   )
