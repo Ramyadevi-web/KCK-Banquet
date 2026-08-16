@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const Hero = () => {
   const images = [
-    "/assets/Hero.jpeg"
+    "/assets/Banquet Hero.jpeg"
   ];
 
   const [currentImage, setCurrentImage] = useState(0);

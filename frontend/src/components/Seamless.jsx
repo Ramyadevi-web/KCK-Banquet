@@ -17,7 +17,7 @@ export const Seamless = () => {
     <ul className="space-y-3 text-left inline-block">
       <li>• Consultation - We understand your preferences and event needs.</li>
       <li>• Custom Menu Planning - We curate dishes that align with your vision and exceed expectations.</li>
-      <li>• On-site Setup & Live Cooking - An engaging culinary experience.</li>
+      <li>• On-site Setup & Live stations - An engaging culinary experience.</li>
       <li>• Impeccable Service - Trained staff ensure a flawless and memorable experience.</li>
     </ul>
   </div>
